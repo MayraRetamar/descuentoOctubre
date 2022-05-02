@@ -12,8 +12,14 @@ rotulo3.innerHTML = "Ingrese el mes de la compra";
 btnEnviar.addEventListener("click", () => {
   let precio: number = Number(dato1.value);
   let cantidad: number = Number(dato2.value);
-  let mes: string = dato3.Value;
-  let descuento: number = precio * cantidad;
-  if (mes == octubre) {
+  let preciofinal: number = precio * cantidad;
+  let mes: string = dato3.value;
+  if (mes === "octubre") {
+    preciofinal * 0.85;
+    console.log(
+      "Por realizar su compra en nuestro mes aniversario, obtiene un 15% de decuento"
+    );
+  } else {
+    console.log("Por su mes de compra no obtiene descuento");
   }
 });
